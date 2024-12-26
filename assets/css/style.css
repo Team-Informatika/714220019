@@ -1,0 +1,35 @@
+.sub-text {
+    font-family: 'Poppins', serif;
+}
+
+.title-text {
+    font-family: 'Inter', serif;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 125%; /* Posisi teks di atas logo */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
